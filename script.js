@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const file = fileInput.files[0];
 
     // Upload file to Google Drive using Apps Script (via fetch to Google Script URL)
-    const formData = new FormData();
+    let formData = new FormData();
     formData.append("name", name);
     formData.append("phone", phone);
     formData.append("email", email);
