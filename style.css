@@ -1,0 +1,142 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #ffe8f2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Container */
+.form-wrapper {
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 520px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Heading */
+.form-wrapper h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ec4899;
+  font-size: 26px;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 4px #f9a8d4;
+}
+
+/* WhatsApp Section */
+.whatsapp-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#whatsappShare {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#whatsappShare:hover {
+  background-color: #1ebe5d;
+}
+
+#counterText {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Submit button */
+#submitBtn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 15px;
+  background-color: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#submitBtn:hover:enabled {
+  background-color: #db2777;
+}
+
+#submitBtn:disabled {
+  background-color: #f5a8c7;
+  cursor: not-allowed;
+}
+
+/* Message after submit */
+#message {
+  margin-top: 20px;
+  color: green;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-wrapper {
+    padding: 25px 20px;
+  }
+
+  .form-wrapper h1 {
+    font-size: 22px;
+  }
+}
